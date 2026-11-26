@@ -66,6 +66,38 @@
         <figcaption>Despesas do mês por categoria (exemplo).</figcaption>
       </figure>
     </section>
+        <section aria-labelledby="titulo-video">
+      <h2 id="titulo-video">Veja o painel em ação</h2>
+
+      <!--
+        preload="none": o vídeo está abaixo da dobra da página, então o
+        navegador não precisa baixar nada até o visitante clicar em play.
+        Só o poster (imagem leve) é carregado, economizando dados e banda
+        de quem nem chegar a assistir. Se fosse um vídeo curto no topo da
+        página, preload="metadata" seria mais adequado (carrega só duração
+        e dimensões); preload="auto" fica reservado para vídeos que quase
+        todo visitante vai assistir.
+
+        Ordem dos <source>: WebM (VP9) primeiro, por ser mais eficiente
+        (arquivo menor com qualidade equivalente). MP4 (H.264) por último,
+        como fallback universal compatível com praticamente todo navegador
+        e dispositivo. O navegador usa o primeiro formato que consegue tocar.
+      -->
+      <figure>
+        <video controls width="640" preload="none"
+               poster="assets/images/poster-demo-painel.jpg">
+          <source src="assets/video/demo-painel.webm"
+                  type='video/webm; codecs="vp9, opus"'>
+          <source src="assets/video/demo-painel.mp4"
+                  type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+          <p>
+            Seu navegador não suporta vídeo HTML5.
+            <a href="assets/video/demo-painel.mp4">Baixe o vídeo em MP4</a>.
+          </p>
+        </video>
+        <figcaption>Demonstração de como registrar um lançamento no painel.</figcaption>
+      </figure>
+    </section>
         <section aria-labelledby="titulo-lancamento">
       <h2 id="titulo-lancamento">Novo lançamento</h2>
 
