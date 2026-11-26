@@ -60,11 +60,57 @@
 
       <h3>Distribuição das despesas</h3>
       <figure>
-        <img src="assets/images/grafico-despesas.svg"
+        <img src="assets/images/grafico_despesas.png"
              alt="Gráfico de barras com as despesas do mês divididas em moradia, alimentação, transporte e lazer"
              width="400">
         <figcaption>Despesas do mês por categoria (exemplo).</figcaption>
       </figure>
+    </section>
+        <section aria-labelledby="titulo-lancamento">
+      <h2 id="titulo-lancamento">Novo lançamento</h2>
+
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Dados do lançamento</legend>
+
+          <div>
+            <label for="descricao">Descrição</label>
+            <input type="text" id="descricao" name="descricao"
+                   required minlength="3" maxlength="60">
+          </div>
+
+          <div>
+            <label for="categoria">Categoria</label>
+            <input type="text" id="categoria" name="categoria"
+                   required pattern="[A-Za-zÀ-ÿ ]{3,30}"
+                   title="Use de 3 a 30 letras, sem números."
+                   placeholder="Ex.: Alimentação">
+          </div>
+
+          <div>
+            <label for="valor">Valor (R$)</label>
+            <input type="number" id="valor" name="valor"
+                   required min="0.01" max="1000000" step="0.01">
+          </div>
+
+          <div>
+            <label for="data">Data</label>
+            <input type="date" id="data" name="data" required>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Resumo mensal por e-mail (opcional)</legend>
+
+          <div>
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" autocomplete="email">
+          </div>
+        </fieldset>
+
+        <button type="submit">Registrar lançamento</button>
+        <button type="reset">Limpar campos</button>
+      </form>
     </section>
   </main>
 
