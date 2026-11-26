@@ -6,60 +6,73 @@
   <title>Painel de Controle Financeiro Pessoal</title>
 </head>
 <body>
-  <h1>Painel de Controle Financeiro Pessoal</h1>
-  <p>Uma ferramenta simples para registrar receitas e despesas e acompanhar para onde vai o seu dinheiro todo mês.</p>
+  <header>
+    <h1>Painel de Controle Financeiro Pessoal</h1>
+    <p>Uma ferramenta simples para registrar receitas e despesas e acompanhar para onde vai o seu dinheiro todo mês.</p>
+  </header>
 
-  <h2>Funcionalidades previstas</h2>
-  <ul>
-    <li>Cadastro de receitas e despesas</li>
-    <li>Resumo mensal por categoria</li>
-    <li>Saldo atual atualizado automaticamente</li>
-    <li>Metas de gastos por categoria</li>
-  </ul>
+  <main>
+    <section aria-labelledby="titulo-funcionalidades">
+      <h2 id="titulo-funcionalidades">Funcionalidades previstas</h2>
+      <ul>
+        <li>Cadastro de receitas e despesas</li>
+        <li>Resumo mensal por categoria</li>
+        <li>Saldo atual atualizado automaticamente</li>
+        <li>Metas de gastos por categoria</li>
+      </ul>
+    </section>
 
-  <h2>Resumo do mês (exemplo)</h2>
-  <table>
-    <caption>Gastos previstos x realizados</caption>
-    <thead>
-      <tr>
-        <th>Categoria</th>
-        <th>Previsto (R$)</th>
-        <th>Realizado (R$)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Moradia</td>
-        <td>1.200,00</td>
-        <td>1.200,00</td>
-      </tr>
-      <tr>
-        <td>Alimentação</td>
-        <td>800,00</td>
-        <td>870,50</td>
-      </tr>
-      <tr>
-        <td>Transporte</td>
-        <td>300,00</td>
-        <td>245,90</td>
-      </tr>
-      <tr>
-        <td>Lazer</td>
-        <td>250,00</td>
-        <td>310,00</td>
-      </tr>
-    </tbody>
-  </table>
+    <section aria-labelledby="titulo-resumo">
+      <h2 id="titulo-resumo">Resumo do mês (exemplo)</h2>
 
-  <h2>Distribuição das despesas</h2>
-  <img src="assets/images/grafico-despesas.svg"
-       alt="Gráfico de barras com as despesas do mês divididas em moradia, alimentação, transporte e lazer"
-       width="400">
+      <table>
+        <caption>Gastos previstos x realizados</caption>
+        <thead>
+          <tr>
+            <th scope="col">Categoria</th>
+            <th scope="col">Previsto (R$)</th>
+            <th scope="col">Realizado (R$)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Moradia</th>
+            <td>1.200,00</td>
+            <td>1.200,00</td>
+          </tr>
+          <tr>
+            <th scope="row">Alimentação</th>
+            <td>800,00</td>
+            <td>870,50</td>
+          </tr>
+          <tr>
+            <th scope="row">Transporte</th>
+            <td>300,00</td>
+            <td>245,90</td>
+          </tr>
+          <tr>
+            <th scope="row">Lazer</th>
+            <td>250,00</td>
+            <td>310,00</td>
+          </tr>
+        </tbody>
+      </table>
 
-  <h2>Para saber mais</h2>
-  <p>
-    Veja materiais de educação financeira no portal
-    <a href="https://www.bcb.gov.br/cidadaniafinanceira" target="_blank" rel="noopener noreferrer">Cidadania Financeira do Banco Central</a>.
-  </p>
+      <h3>Distribuição das despesas</h3>
+      <figure>
+        <img src="assets/images/grafico-despesas.svg"
+             alt="Gráfico de barras com as despesas do mês divididas em moradia, alimentação, transporte e lazer"
+             width="400">
+        <figcaption>Despesas do mês por categoria (exemplo).</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Para saber mais, veja o portal
+      <a href="https://www.bcb.gov.br/cidadaniafinanceira" target="_blank" rel="noopener noreferrer">Cidadania Financeira do Banco Central</a>.
+    </p>
+  </footer>
 </body>
 </html>
